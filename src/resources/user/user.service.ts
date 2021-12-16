@@ -1,14 +1,7 @@
 import { PrismaClient } from "@prisma/client";
+import { UserBody } from "./dtos/user.dtos";
 
 const prisma = new PrismaClient();
-
-interface UserBody {
-  data: {
-    name: string;
-    email: string;
-    password: string
-  }
-}
 
 export class UserService {
 
